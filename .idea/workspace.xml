@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7c0e945-0d36-43f4-9aaa-2cb1104e6ca1" name="Default Changelist" comment="" />
+    <list default="true" id="c7c0e945-0d36-43f4-9aaa-2cb1104e6ca1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/study/even/netty/tcp/NettyClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/study/even/netty/tcp/NettyClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/study/even/netty/tcp/NettyServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/study/even/netty/tcp/NettyServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,22 +23,33 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1nTN2Z5L32s4iUoZVoEzk56utNT" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="true" />
+    <property name="Repository.Attach.JavaDocs" value="true" />
+    <property name="Repository.Attach.Sources" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="leetcode.id" />
   </component>
-  <component name="RunManager" selected="Application.GroupChatClient">
+  <component name="RunManager" selected="Application.NettyClient">
     <configuration name="GroupChatClient" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="study.even.nio.groupchat.GroupChatClient" />
       <module name="NettyProject" />
@@ -56,16 +76,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NettyClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="study.even.netty.tcp.NettyClient" />
+      <module name="NettyProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="study.even.netty.tcp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NettyServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="study.even.netty.tcp.NettyServer" />
+      <module name="NettyProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="study.even.netty.tcp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.GroupChatClient" />
       <item itemvalue="Application.GroupChatServer" />
+      <item itemvalue="Application.NettyServer" />
+      <item itemvalue="Application.NettyClient" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NettyClient" />
+        <item itemvalue="Application.NettyServer" />
         <item itemvalue="Application.GroupChatClient" />
         <item itemvalue="Application.GroupChatServer" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
+    <option name="ACTIVE_ACTIONS" value=",VISIBILITY_SORTER,SHOW_PROPERTIES" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -79,48 +133,69 @@
       <updated>1611409914333</updated>
       <workItem from="1611409918835" duration="384000" />
       <workItem from="1611410340059" duration="10679000" />
+      <workItem from="1611467075949" duration="101000" />
+      <workItem from="1611467215342" duration="7123000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="120" y="144" width="812" height="722" key="#Intentions" timestamp="1611412727127">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="120" y="144" width="812" height="722" key="#Intentions/0.0.1368.872@0.0.1368.872" timestamp="1611412727127" />
+    <state x="556" y="98" key="#Notifications" timestamp="1611472192876">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="556" y="98" key="#Notifications/0.0.1368.872@0.0.1368.872" timestamp="1611472192876" />
     <state x="282" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611418539784">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="282" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1368.872@0.0.1368.872" timestamp="1611418539784" />
-    <state x="832" y="159" key="#com.intellij.ide.util.MemberChooser" timestamp="1611419322447">
+    <state x="832" y="159" key="#com.intellij.ide.util.MemberChooser" timestamp="1611474408678">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="832" y="159" key="#com.intellij.ide.util.MemberChooser/0.0.1368.872@0.0.1368.872" timestamp="1611419322447" />
-    <state width="638" height="240" key="GridCell.Tab.0.bottom" timestamp="1611421240255">
+    <state x="832" y="159" key="#com.intellij.ide.util.MemberChooser/0.0.1368.872@0.0.1368.872" timestamp="1611474408678" />
+    <state width="639" height="240" key="GridCell.Tab.0.bottom" timestamp="1611474803662">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="638" height="240" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1611421240255" />
-    <state width="638" height="240" key="GridCell.Tab.0.center" timestamp="1611421240255">
+    <state width="639" height="240" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1611474803662" />
+    <state width="639" height="240" key="GridCell.Tab.0.center" timestamp="1611474803662">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="638" height="240" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1611421240255" />
-    <state width="638" height="240" key="GridCell.Tab.0.left" timestamp="1611421240255">
+    <state width="639" height="240" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1611474803662" />
+    <state width="639" height="240" key="GridCell.Tab.0.left" timestamp="1611474803661">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="638" height="240" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1611421240255" />
-    <state width="638" height="240" key="GridCell.Tab.0.right" timestamp="1611421240255">
+    <state width="639" height="240" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1611474803661" />
+    <state width="639" height="240" key="GridCell.Tab.0.right" timestamp="1611474803662">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="638" height="240" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1611421240255" />
-    <state x="106" y="41" key="SettingsEditor" timestamp="1611410305129">
+    <state width="639" height="240" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1611474803662" />
+    <state x="137" y="78" width="1138" height="793" key="SettingsEditor" timestamp="1611472235152">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="106" y="41" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1611410305129" />
-    <state x="381" y="265" key="com.intellij.ide.util.TipDialog" timestamp="1611410336440">
+    <state x="137" y="78" width="1138" height="793" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1611472235152" />
+    <state x="381" y="265" key="com.intellij.ide.util.TipDialog" timestamp="1611467217519">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="381" y="265" key="com.intellij.ide.util.TipDialog/0.0.1368.872@0.0.1368.872" timestamp="1611410336440" />
+    <state x="381" y="265" key="com.intellij.ide.util.TipDialog/0.0.1368.872@0.0.1368.872" timestamp="1611467217519" />
+    <state x="399" y="326" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1611469056867">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="399" y="326" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1368.872@0.0.1368.872" timestamp="1611469056867" />
   </component>
 </project>
