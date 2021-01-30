@@ -66,10 +66,10 @@ public class GroupChatServer {
                             //处理读
                             readData(key);
                         }
-                    }
 
-                    //当前的key删除，防止重复处理
-                    iterator.remove();
+                        //当前的key删除，防止重复处理
+                        iterator.remove();
+                    }
                 } else {
                     System.out.println("等待，，，，，");
                 }
