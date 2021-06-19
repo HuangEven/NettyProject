@@ -34,10 +34,24 @@ public class GroupChatClient {
         //得到用户名
         userName = socketChannel.getLocalAddress().toString().substring(1);
         System.out.println(userName + " is ready,,,,,,,");
+        infoToClients();
+    }
+
+    /**
+     * 通知其他客户端上线情况
+     */
+    public void infoToClients() {
+        String info = userName + " is online ,,,,,";
+        try {
+            socketChannel.write(ByteBuffer.wrap(info.getBytes()));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     /**
      * 向服务器发消息
+     *
      * @param info
      */
     public void sendInfo(String info) {
@@ -54,19 +68,19 @@ public class GroupChatClient {
      * 读取从服务器拿到的信息
      */
     public void readInfo() throws IOException {
-        int readChannnels = selector. select();
+        int readChannnels = selector.select();
         //有可用的通道
-        if (readChannnels>0){
+        if (readChannnels > 0) {
             Iterator<SelectionKey> selectionKeyIterator = selector.selectedKeys().iterator();
-            while(selectionKeyIterator.hasNext()){
+            while (selectionKeyIterator.hasNext()) {
                 SelectionKey selectionKey = selectionKeyIterator.next();
-                if (selectionKey.isReadable()){
+                if (selectionKey.isReadable()) {
                     //得到相关通道
                     Channel channel = selectionKey.channel();
                     //得到一个buffer
                     ByteBuffer byteBuffer = ByteBuffer.allocate(1024);
                     //读取
-                    ((SocketChannel)channel).read(byteBuffer);
+                    ((SocketChannel) channel).read(byteBuffer);
                     //把读取到的缓冲区数据转成字符串
                     String msg = new String(byteBuffer.array());
                     System.out.println(msg.trim());
@@ -89,7 +103,7 @@ public class GroupChatClient {
         //发送数据给服务器端
         Scanner scanner = new Scanner(System.in);
 
-        while (scanner.hasNextLine()){
+        while (scanner.hasNextLine()) {
             String line = scanner.nextLine();
             groupChatClient.sendInfo(line);
         }

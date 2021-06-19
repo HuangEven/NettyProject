@@ -12,14 +12,15 @@ import io.netty.util.CharsetUtil;
  */
 
 /**
- * 1、自定义一个Handler，需要继承netty规定好的某个HandlerAdapter
+ * ChannelInboundHandlerAdapter入栈handler适配器
+ * 1、自定义一个Handler，需要继承netty规定好的某个HandlerAdapter（有相关规范规定）
  * 2、这时自定义handler才能起作用
  */
 public class NettyServerHandler extends ChannelInboundHandlerAdapter {
 
     /**
      * 读取数据实际（这里可以读取客户端发送的信息）
-     * @param ctx   上下文对象，含有管道pipeline，通道channel，地址
+     * @param ctx   上下文对象，含有管道pipeline（可以关联很多handler，进行业务逻辑处理），通道channel（关注数据，处理数据读写），地址
      * @param msg   客户端发送的数据，以对象形式传输，默认Object
      * @throws Exception
      */
@@ -28,7 +29,7 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
         System.out.println("server context: "+ctx);
         /**
          * 将msg转成一个ByteBuff
-         * ByteBuff是netty提供的，与NIO的字节缓冲ByteBuffer不同
+         * ByteBuff是Netty提供的，与NIO的字节缓冲ByteBuffer不同
          */
         ByteBuf byteBuf = (ByteBuf) msg;
         System.out.println("客户端发送消息："+byteBuf.toString(CharsetUtil.UTF_8));
@@ -60,7 +61,6 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
      */
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
-
         ctx.channel().close();
     }
 }

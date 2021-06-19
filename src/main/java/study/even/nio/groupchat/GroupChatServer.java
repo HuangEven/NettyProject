@@ -71,7 +71,7 @@ public class GroupChatServer {
                         iterator.remove();
                     }
                 } else {
-                    System.out.println("等待，，，，，");
+//                    System.out.println("等待，，，，，");
                 }
 
             }
