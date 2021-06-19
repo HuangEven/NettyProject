@@ -7,7 +7,7 @@ import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.handler.codec.http.*;
 import io.netty.util.CharsetUtil;
 
-import java.nio.charset.Charset;
+import java.net.URI;
 
 /**
  * 说明：
@@ -29,15 +29,26 @@ public class TestHttpServerHandler extends SimpleChannelInboundHandler<HttpObjec
             System.out.println("msg 类型：" + msg.getClass());
             System.out.println("客户端地址："+ ctx.channel().remoteAddress());
 
+            /*过滤图标*/
+            // 获取uri
+            HttpRequest httpRequest = (HttpRequest) msg;
+            URI uri = new URI(httpRequest.uri());
+            if ("/favicon.ico".equals(uri.getPath())) {
+                System.out.println("请求了 /favicon.ico资源， 不作处理");
+                return;
+            }
+
             // 回复信息给浏览器
             ByteBuf byteBuf = Unpooled.copiedBuffer("hello, I am the Server.", CharsetUtil.UTF_8);
 
             // 构造一个http响应，即 httpResponse
-            DefaultFullHttpResponse httpResponse = new DefaultFullHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.OK, byteBuf);
+            FullHttpResponse httpResponse = new DefaultFullHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.OK, byteBuf);
 
             httpResponse.headers().set(HttpHeaderNames.CONTENT_TYPE, "text/plain");
             httpResponse.headers().set(HttpHeaderNames.CONTENT_LENGTH, byteBuf.readableBytes());
 
+            // 将构建好的response返回
+            ctx.writeAndFlush(httpResponse);
         }
 
     }

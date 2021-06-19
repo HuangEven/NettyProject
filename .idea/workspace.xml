@@ -5,19 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7c0e945-0d36-43f4-9aaa-2cb1104e6ca1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/study/even/netty/http/TestHttpServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/study/even/netty/http/TestServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/study/even/netty/http/TestServerInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/study/even/netty/tcp/NettyClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/study/even/netty/tcp/NettyClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/study/even/netty/tcp/NettyClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/study/even/netty/tcp/NettyClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/study/even/netty/tcp/NettyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/study/even/netty/tcp/NettyServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/study/even/netty/tcp/NettyServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/study/even/netty/tcp/NettyServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/study/even/nio/groupchat/GroupChatClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/study/even/nio/groupchat/GroupChatClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/study/even/nio/groupchat/GroupChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/study/even/nio/groupchat/GroupChatServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/study/even/nio/groupchat/GroupChatClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/study/even/nio/groupchat/GroupChatClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/study/even/nio/groupchat/GroupChatServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/study/even/nio/groupchat/GroupChatServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/study/even/netty/http/TestHttpServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/study/even/netty/http/TestHttpServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/study/even/netty/http/TestServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/study/even/netty/http/TestServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +175,7 @@
       <workItem from="1611929722054" duration="505000" />
       <workItem from="1611969524042" duration="5343000" />
       <workItem from="1624066721913" duration="2134000" />
-      <workItem from="1624093761715" duration="9740000" />
+      <workItem from="1624093761715" duration="11128000" />
     </task>
     <task id="LOCAL-00001" summary="使用Netty简单实现tcp服务">
       <created>1611474919077</created>
@@ -194,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611474919078</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="使用Netty实现http服务">
+      <created>1624116316019</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1624116316019</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,7 +211,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="使用Netty简单实现tcp服务" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用Netty简单实现tcp服务" />
+    <MESSAGE value="使用Netty实现http服务" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用Netty实现http服务" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
