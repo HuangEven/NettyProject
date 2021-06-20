@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7c0e945-0d36-43f4-9aaa-2cb1104e6ca1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/study/even/netty/groupchat/GroupChatClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/study/even/netty/groupchat/GroupChatClientNetty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/study/even/netty/groupchat/GroupChatServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/study/even/netty/groupchat/GroupChatServerNetty.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/study/even/netty/http/TestHttpServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/study/even/netty/http/TestHttpServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/study/even/netty/http/TestServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/study/even/netty/http/TestServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/study/even/nio/groupchat/ClientThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/study/even/nio/groupchat/ClientThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/study/even/nio/groupchat/GroupChatClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/study/even/nio/groupchat/GroupChatClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/study/even/nio/groupchat/GroupChatServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/study/even/nio/groupchat/GroupChatServer.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,13 +64,13 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Application.TestServer">
-    <configuration name="GroupChatClient" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="study.even.nio.groupchat.GroupChatClient" />
+  <component name="RunManager" selected="Application.GroupChatClientNetty">
+    <configuration name="GroupChatClientNetty" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="study.even.netty.groupchat.GroupChatClientNetty" />
       <module name="NettyProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="study.even.nio.groupchat.*" />
+          <option name="PATTERN" value="study.even.netty.groupchat.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -71,12 +78,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="study.even.nio.groupchat.GroupChatServer" />
+    <configuration name="GroupChatServerNetty" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="study.even.netty.groupchat.GroupChatServerNetty" />
       <module name="NettyProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="study.even.nio.groupchat.*" />
+          <option name="PATTERN" value="study.even.netty.groupchat.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,33 +130,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.GroupChatClient" />
-      <item itemvalue="Application.GroupChatServer" />
       <item itemvalue="Application.NettyServer" />
       <item itemvalue="Application.NettyClient" />
       <item itemvalue="Application.TestServer" />
+      <item itemvalue="Application.GroupChatClientNetty" />
+      <item itemvalue="Application.GroupChatServerNetty" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GroupChatClientNetty" />
+        <item itemvalue="Application.GroupChatServerNetty" />
         <item itemvalue="Application.TestServer" />
         <item itemvalue="Application.NettyClient" />
         <item itemvalue="Application.NettyServer" />
-        <item itemvalue="Application.GroupChatClient" />
-        <item itemvalue="Application.GroupChatServer" />
       </list>
     </recent_temporary>
   </component>
@@ -175,7 +180,8 @@
       <workItem from="1611929722054" duration="505000" />
       <workItem from="1611969524042" duration="5343000" />
       <workItem from="1624066721913" duration="2134000" />
-      <workItem from="1624093761715" duration="11128000" />
+      <workItem from="1624093761715" duration="11693000" />
+      <workItem from="1624150414480" duration="6344000" />
     </task>
     <task id="LOCAL-00001" summary="使用Netty简单实现tcp服务">
       <created>1611474919077</created>
@@ -191,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624116316019</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="使用Netty实现http服务&#10; - 过滤http的特定资源">
+      <created>1624117868138</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1624117868138</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +225,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="使用Netty简单实现tcp服务" />
     <MESSAGE value="使用Netty实现http服务" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用Netty实现http服务" />
+    <MESSAGE value="使用Netty实现http服务&#10; - 过滤http的特定资源" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用Netty实现http服务&#10; - 过滤http的特定资源" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
